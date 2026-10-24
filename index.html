@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mes albums musicaux - Pascal Boulard-Auger</title>
+
+<!-- Open Graph pour WhatsApp, Facebook, Messenger... -->
+<meta property="og:title" content="Mes albums musicaux">
+<meta property="og:description" content="Choisissez un album et laissez-vous porter par la musique.">
+<meta property="og:image" content="https://pascal-boulardauger.github.io/cd_noel_recto.png">
+<meta property="og:url" content="https://pascal-boulardauger.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Pochettes de mes albums musicaux">
+
+<!-- Aperçu Twitter/X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mes albums musicaux">
+<meta name="twitter:description" content="Choisissez un album et laissez-vous porter par la musique.">
+<meta name="twitter:image" content="https://pascal-boulardauger.github.io/cd_noel_recto.png">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000000;
+    text-align: center;
+    color: #FF9999;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0 8px;
+}
+
+.intro {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 0 30px;
+}
+
+/* --- Grille des albums : 3 colonnes sur ordinateur, 1 sur téléphone --- */
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Chaque carte entière (image + titre) est un seul lien */
+.album {
+    display: block;
+    text-decoration: none;
+    color: #FF9999;
+    border-radius: 18px;
+    padding: 12px 12px 18px;
+    background: #111111;
+    border: 1px solid #222222;
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.album:hover,
+.album:focus-visible {
+    transform: translateY(-6px);
+    border-color: #66FFFF;
+    box-shadow: 0 10px 30px rgba(102, 255, 255, 0.25);
+    outline: none;
+}
+
+.album img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.album h2 {
+    font-size: 1.3em;
+    margin: 16px 0 6px;
+}
+
+.album .ecouter {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 22px;
+    background: #66FFFF;
+    color: black;
+    border-radius: 30px;
+    font-size: 0.95em;
+}
+
+.footer {
+    margin-top: 45px;
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Mes albums musicaux</h1>
+<p class="intro">Choisissez un album pour l'&eacute;couter.</p>
+
+<!--
+  =============================================
+  POUR AJOUTER OU MODIFIER UN ALBUM
+  Copie un bloc <a class="album">...</a> et change :
+   - href  : la page de l'album
+   - src   : l'image de la pochette
+   - alt   : la description de l'image
+   - <h2>  : le titre affiché sous l'image
+  =============================================
+-->
+
+<div class="albums">
+
+  <a class="album" href="https://pascal-boulardauger.github.io/cd_mariage/">
+    <img src="cd_mariage_recto.png" alt="Pochette de l'album de mariage Stef et Pascal">
+    <h2>Stef &amp; Pascal &ndash; Notre mariage</h2>
+    <span class="ecouter">&Eacute;couter l'album</span>
+  </a>
+
+  <a class="album" href="https://pascal-boulardauger.github.io/cd_noel/">
+    <img src="cd_noel_recto.png" alt="Pochette de l'album Les plus belles chansons de Noël">
+    <h2>Les plus belles chansons de No&euml;l</h2>
+    <span class="ecouter">&Eacute;couter l'album</span>
+  </a>
+
+  <a class="album" href="https://pascal-boulardauger.github.io/cd_celeste/">
+    <img src="cd_celeste_recto.png" alt="Pochette de l'album Céleste">
+    <h2>C&eacute;leste</h2>
+    <span class="ecouter">&Eacute;couter l'album</span>
+  </a>
+
+</div>
+
+<div class="footer">
+&copy; 2026 Pascal Boulard-Auger - Tous droits r&eacute;serv&eacute;s<br>
+Le code source de ce site est prot&eacute;g&eacute; par le droit d'auteur.<br>
+Toute reproduction ou r&eacute;utilisation est interdite sans autorisation.
+</div>
+
+</div>
+
+</body>
+</html>
