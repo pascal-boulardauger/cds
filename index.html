@@ -22,6 +22,15 @@
 <meta name="twitter:description" content="Choisissez un album et laissez-vous porter par la musique.">
 <meta name="twitter:image" content="https://pascal-boulardauger.github.io/cd_noel_recto.png">
 
+<!-- Installation sur l'écran d'accueil du téléphone -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#000000">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mes albums">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
 <style>
 body {
     margin: 0;
@@ -161,6 +170,13 @@ Toute reproduction ou r&eacute;utilisation est interdite sans autorisation.
 </div>
 
 </div>
+
+<script>
+// Active l'installation sur l'écran d'accueil du téléphone
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
 
 </body>
 </html>
