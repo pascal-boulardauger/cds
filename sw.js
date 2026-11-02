@@ -9,13 +9,17 @@
          (chaque fichier listé DOIT exister sur GitHub, sinon rien ne fonctionne) ;
       2. change le numéro de version (v1 -> v2 -> v3...).
 */
-const CACHE = "mes-albums-v1";
+const CACHE = "mes-albums-v2";
 const FICHIERS = [
   "./",
   "./index.html",
   "./cd_mariage_recto.png",
   "./cd_noel_recto.png",
   "./cd_audeladesetoiles_recto.png",
+  "./cd_renaissance_recto.png",
+  "./cd_montraindelavie_recto.png",
+  "./cd_Millefaconsdetaimer_recto.png",
+  "./cd_celeste_recto.png",
   "./icon-192.png",
   "./icon-512.png"
 ];
